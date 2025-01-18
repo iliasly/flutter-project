@@ -1,0 +1,10 @@
+^C:\USERS\AMINE\ONEDRIVE\BUREAU\YASSER\TODO_APP_FLUTTER\BUILD\WINDOWS\X64\CMAKEFILES\6D6DBCCFD91052BA9B981DF5ED55F9EA\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

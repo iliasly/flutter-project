@@ -1,0 +1,10 @@
+^C:\USERS\AMINE\ONEDRIVE\BUREAU\YASSER\TODO_APP_FLUTTER\BUILD\WINDOWS\X64\CMAKEFILES\6D6DBCCFD91052BA9B981DF5ED55F9EA\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/amine/OneDrive/Bureau/yasser/todo_app_flutter/windows -BC:/Users/amine/OneDrive/Bureau/yasser/todo_app_flutter/build/windows/x64 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/amine/OneDrive/Bureau/yasser/todo_app_flutter/build/windows/x64/simple_todo.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
